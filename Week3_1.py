@@ -4,7 +4,7 @@ class Customer:
         self.balance = balance
     
     def __str__(self):
-        return f"이름:{self.name}, 돈:{self.balance}"
+        return f"{self.name}({self.balance}원)"
 
     def withdraw(self, amount):
         if amount <= self.balance:
@@ -29,4 +29,7 @@ if __name__ == '__main__':
     print(c1, c2, c3)
 
     c2.withdraw( 1000000 )
+    print(c1, c2, c3)
+
+    print( c3.withdraw(10000), c2.deposit(10000) )
     print(c1, c2, c3)
