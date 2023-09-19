@@ -13,6 +13,7 @@ class Book(Item):
         self.price = price
         self.page = page
         self.auther = auther
+        Item.count += 1
 
     def __str__(self):
         return f"제목:{self.title}, 가격:{self.price}, 페이지:{self.page}, 저자:{self.auther}"
@@ -25,6 +26,7 @@ class Magazine(Item):
         self.title = title
         self.price = price
         self.date = date
+        Item.count += 1
 
     def __str__(self):
         return f"제목:{self.title}, 가격:{self.price}, 출간 월:{self.date}"
