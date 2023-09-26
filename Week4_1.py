@@ -21,7 +21,7 @@ def ang():
     photo1.configure(file = photo2)
 
 # labels
-label1 = Label(window, text = "당신이 좋--아하는 동물 투표 ", font = ("궁서체", 30), fg = 'blue', bg = 'yellow')
+label1 = Label(window, text = "좋아하는 동물 투표 ", font = ("궁서체", 30), fg = 'blue', bg = 'yellow')
 label1.pack()
 
 photo1 = PhotoImage(file = '.\jpegfiles\cat.gif')
@@ -35,7 +35,7 @@ images1 = Label(window, image = photo1)
 rb1.pack();rb2.pack();rb3.pack();images1.pack()
 
 button1 = Button(window, text = "파이썬 종료", fg = 'red', command = quit)
-button2 = Button(window, text = "동--물 봐버리기", fg = 'red', command = ang)
+button2 = Button(window, text = "동물 보기", fg = 'red', command = ang)
 button1.pack()
 button2.pack()
 
