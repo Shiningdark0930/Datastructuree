@@ -27,9 +27,9 @@ label1.pack()
 photo1 = PhotoImage(file = '.\jpegfiles\cat.gif')
 photo2 = '.\jpegfiles\cat.gif'
 chk = IntVar()
-rb1 = Radiobutton(window, text = "야옹이", variable = chk, value = 1, command = changeImages)
-rb2 = Radiobutton(window, text = "멍뭉이", variable = chk, value = 2, command = changeImages)
-rb3 = Radiobutton(window, text = "Rabbit", variable = chk, value = 3, command = changeImages)
+rb1 = Radiobutton(window, text = "고양이", variable = chk, value = 1, command = changeImages)
+rb2 = Radiobutton(window, text = "강아지", variable = chk, value = 2, command = changeImages)
+rb3 = Radiobutton(window, text = "토끼", variable = chk, value = 3, command = changeImages)
 
 images1 = Label(window, image = photo1)
 rb1.pack();rb2.pack();rb3.pack();images1.pack()
