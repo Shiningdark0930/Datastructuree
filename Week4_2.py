@@ -30,8 +30,8 @@ textt = ["jeju1.gif", "jeju2.gif", "jeju3.gif", "jeju4.gif", "jeju5.gif", "jeju6
 label1 = Label(window, text = textt[i], font = ("궁서체", 30), fg = 'blue', bg = 'yellow')
 label1.pack()
 
-button1 = Button(window, text = "이--전", fg = 'red', command = numMinus)
-button2 = Button(window, text = "다--음", fg = 'red', command = numPlus)
+button1 = Button(window, text = "이--전", fg = 'red', command = numMinus, width = 10, height = 2)
+button2 = Button(window, text = "다--음", fg = 'red', command = numPlus, width = 10, height = 2)
 button1.pack(side = LEFT)
 button2.pack(side = RIGHT)
 
